@@ -96,8 +96,9 @@ from keras.layers import Conv1D, Dense, Flatten, Dropout
 from keras.models import Sequential
 
 model = Sequential()
-model.add(Dense(32, activation='relu', input_shape=(2160,)))
+model.add(Conv1D(128, 5, padding='same', activation = 'relu', input_shape(2160,1)))
 model.add(Dropout(rate=0.25))
+model.add(Flatten(0)
 model.add(Dense(1, activation='sigmoid'))
 
 model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['acc'])
