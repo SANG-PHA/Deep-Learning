@@ -2,7 +2,6 @@ import os
 import warnings
 warnings.filterwarnings("ignore")
 
-
 def clear():
     try:
         ret_val = os.system('clear')
@@ -23,7 +22,6 @@ def main():
     clear()
 
     print("Train : ", train_image.shape, "Test : ", test_image.shape)
-
 
 
 if __name__=='__main__':
