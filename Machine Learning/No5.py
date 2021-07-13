@@ -31,6 +31,7 @@ for i in range(10000):
     net2 = np.dot(layer1,weight1) # 행렬 곱 계산
     layer2 = actf(net2) # 활성화 함수 적용
 
+    
     # 역방향 전파
     layer2_error = layer2-y # 오차 계산
     layer2_delta = layer2_error*actf_deriv(layer2) # 델타 값 계산
